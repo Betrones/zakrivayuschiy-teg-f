@@ -220,6 +220,8 @@
 .button__text {
   color: var(--color-button-alt);
   mix-blend-mode: difference;
+  font-size: 14px;
+  font-family: var(--f-accent);
 }
 
 .card__like-button:focus {
@@ -239,7 +241,7 @@
   transform-origin: left;
 }
 
-.card__like-button:hover:before{
+.card__like-button:hover:before {
   transform: scaleX(1);
 }
 
@@ -259,7 +261,7 @@
   transition: outline 0.3s ease;
 }
 
-.card__icon-button:focus-visible .like-icon{
+.card__icon-button:focus-visible .like-icon {
   outline: 2px solid var(--color-accent);
   outline-offset: 1px;
 }
@@ -359,24 +361,11 @@
   }
 }
 
-.button__text {
-  font-size: 14px;
-  font-family: var(--f-accent);
-}
-
-/* .save {
-  background: var(--color-bg);
-  margin-block-end: 100px;
-  width: 100%;
-} */
-
 .save__button {
   background: var(--color-bg);
   margin-block-end: 100px;
   border: 2px solid var(--color-accent);
   padding: 13px 20px;
-
-  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -387,7 +376,7 @@
   width: clamp(306px, calc(100vh * 0.458), 335px);
 }
 
-.save__button .button__text{
+.save__button .button__text {
   line-height: 90%;
   font-size: 13px;
 }
@@ -470,7 +459,7 @@ dialog::backdrop {
     flex-direction: row;
   }
 
-  .save__img  {
+  .save__img {
     width: 21px;
     height: 21px;
   }

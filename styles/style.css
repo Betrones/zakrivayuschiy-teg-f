@@ -25,6 +25,7 @@
   background-image: repeating-linear-gradient(to right, var(--color-bg-gradient-line) 0px 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, var(--color-bg-gradient-line) 0px 2px, transparent 2px 4px), linear-gradient(var(--color-bg-gradient));
   background-attachment: fixed;
   background-size: cover;
+  font-variation-settings: 'wght' 400;
 }
 
 

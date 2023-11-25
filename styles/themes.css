@@ -38,7 +38,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root.theme-auto {
+  :root {
     --color-bg: #000;
     --color-accent: #00CC14;
 
@@ -52,7 +52,7 @@
     --color-button-alt: #000;
   }
 
-  :root.theme-auto .button__text {
+  :root .button__text {
     color: var(--color-button);
   }
 }

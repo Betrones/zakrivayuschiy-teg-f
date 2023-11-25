@@ -12,3 +12,182 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+
+.theme-menu__button {
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus {
+  opacity: 0.6;
+  /* border-bottom: 2px solid; */
+  outline: none;
+}
+
+.theme-menu__button:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease ;
+}
+
+.theme-menu__button:focus:after {
+  transform: scaleX(1);
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.theme-menu__button:disabled:before {
+  content: "▶";
+  position: absolute;
+  left: -21px;
+  top: -2px;
+  animation: chosen-theme 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes chosen-theme {
+  from {
+    left: -21px;
+  }
+
+  to {
+    left: -17px;
+  }
+}
+
+
+.button {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 var(--color-button);
+  outline: none;
+}
+
+.button:before {
+  content: '';
+  position: absolute;
+  transform: scaleX(0);
+  background: var(--color-button);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
+}
+
+.button:hover:before {
+  transform: scaleX(1);
+}
+
+.like-icon {
+  transition: outline 0.3s ease;
+}
+
+.contour {
+  fill: var(--color-accent);
+  transition: fill 0.1s linear;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
+}
+
+.sparks {
+  fill: transparent;
+}
+
+.like-icon:hover .core {
+  fill: var(--color-heart);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--color-heart);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon:active .core {
+  fill: var(--color-heart-accent);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .main-body {
+  fill: var(--color-heart-accent);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--color-heart-accent);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--color-heart-accent);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .contour {
+  transition: fill 0.3s 0.06s linear;
+  fill: var(--color-heart-accent);
+}
+
+.heart {
+  transform-origin: center;
+}
+
+.like-icon.is-liked .heart {
+  animation: scaling 0.3s 0.1s 1 ease-in alternate;
+}
+
+.like-icon.is-liked .sparks {
+  animation: spark-flash 0.3s 0.3s 1 ease-in alternate;
+}
+
+@keyframes scaling {
+  from {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.5;
+  }
+
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes spark-flash {
+  from {
+    fill: transparent;
+  }
+
+  50% {
+    fill: var(--color-heart-accent);
+  }
+
+  to {
+    fill: transparent;
+  }
+}

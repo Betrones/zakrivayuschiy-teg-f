@@ -9,6 +9,10 @@
   font-size: 18px;
 }
 
+dialog {
+  padding: 0;
+}
+
 body {
   margin: 0;
 }

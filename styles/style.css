@@ -311,7 +311,7 @@ form {
 .save__button {
   background: var(--color-bg);
   margin-block-end: 100px;
-  padding: 13px 20px;
+  padding: 15px 20px;
 
   display: flex;
   flex-direction: column;
@@ -319,14 +319,14 @@ form {
   align-items: center;
   gap: 8px;
 
-  width: clamp(306px, calc(100vh * 0.458), 335px);
+  /* width: clamp(306px, calc(100vh * 0.458), 335px); */
 }
 
 form .button__text {
   padding: 9px 17px;
 }
 
-@media (width > 375px) {
+@media (width > 376px) {
   .header {
     width: clamp(375px, calc(100vw * 0.483), 696px);
     margin-inline: auto;

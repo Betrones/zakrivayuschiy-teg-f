@@ -16,8 +16,13 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  max-width: 100%;
+  
   font-family: var(--f-main), sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   background-color: var(--color-bg);
   color: var(--color-accent);
@@ -31,19 +36,22 @@
 
 a {
   cursor: pointer;
+  max-width: 100%;
 }
 
 
 .header {
+  max-width: calc(100% - 4px);
   background: var(--color-bg);
   font-family: var(--f-accent), fantasy;
-  border: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-accent);
+  width: 100%;
 
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   /* padding-block: 115px; */
 
-  margin: 100px auto;
+  margin: 102px auto;
 }
 
 .header__title-group {
@@ -59,12 +67,18 @@ a {
 }
 
 .header__logo {
-  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  /* font-size: 3.0625rem; */
+  /* font-size: 49px; */
+  /* font-size: clamp(49px, calc(2.710387323943662rem + 1.5023474178403755vw), 65px); */
+  font-size: clamp(49px, calc(100vw * 0.13), 65px);
+  max-width: 100%;
   /* text-transform: uppercase; */
+
+  line-height: normal;
 }
 
 .header__title {
-  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  font-size: clamp(14px, calc(100vw * 0.037), 23px);
 }
 
 .theme-menu {
@@ -72,6 +86,7 @@ a {
   display: flex;
   justify-content: center;
   /* grid-template-columns: 1fr auto 1fr; */
+  padding-block-end: 3px;
 }
 
 .theme-menu__list {
@@ -101,15 +116,17 @@ a {
 }
 
 .main {
+  max-width: calc(100% - 4px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 54px;
+  padding-block-start: 2px;
 }
 
 .card {
   background: var(--color-bg);
-  border: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-accent);
   max-width: 100%;
 }
 
@@ -121,11 +138,12 @@ a {
 .card__pic {
   position: relative;
   outline: 2px solid var(--color-accent);
+  display: flex;
+  margin-block-start: 2px;
 }
 
 .card__img {
   max-width: 100%;
-  max-height: calc(100vw - 4px);
   object-fit: cover;
   object-position: center;
 }
@@ -154,12 +172,11 @@ a {
 .card__content {
   padding: 25px;
   display: grid;
-  gap: 25px;
+  gap: 27px;
 }
 
-.card-text {
+.card__text {
   line-height: 21px;
-  font-size: 18px;
 }
 
 .buttons {
@@ -171,16 +188,26 @@ a {
 .button {
   background: transparent;
   color: var(--color-accent);
-  border: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-accent);
+  outline-offset: -2px;
   font-family: var(--f-accent), fantasy;
   line-height: 90%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 17px;
+
+  position: relative;
 }
 
+/* .button:focus {
+  outline: none;
+} */
+
 .card__like-button {
-  padding: 10px 35px;
-  
   position: relative;
+  width: 130px;
 }
 
 .button__text {
@@ -219,6 +246,7 @@ a {
   width: 28px;
   height: 28px;
   color: var(--color-accent);
+  mix-blend-mode: difference;
 }
 
 #dialog-id {
@@ -231,11 +259,14 @@ a {
   padding: 30px 40px;
 
   width: clamp(341px, calc(100vh * 0.248), 357px);
+
+  max-width: 100%;
 }
 
 .dialog__text {
   line-height: 150%;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .dialog__main {
@@ -261,14 +292,27 @@ dialog::backdrop {
   background: transparent;
   padding: 9px 17px;
   border: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 
 form {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  border: 2px solid var(--color-accent);
+  position: absolute;
+  inset: 0;
+  /* position: relative; */
+  /* border: 2px solid var(--color-accent); */
+  width: 100%;
+  height: 100%;
+}
+
+.dialog__main .button{
+  /* height: 50px; */
+  padding-block: 17px;
 }
 
 .dialog__img {
@@ -309,6 +353,7 @@ form {
   background: var(--color-bg);
   margin-block-end: 100px;
   padding: 15px 20px;
+  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -320,13 +365,25 @@ form {
 }
 
 form .button__text {
-  padding: 9px 17px;
+  text-transform: uppercase;
 }
 
 @media (width > 376px) {
   .header {
     width: clamp(375px, calc(100vw * 0.483), 696px);
     margin-inline: auto;
+    /* height: 366px; */
+    grid-template-rows: 136px auto 120px;
+    margin-block: 103px;
+  }
+
+  .header__title-group {
+    align-self: end;
+    margin: 0;
+  }
+
+  .header__theme-menu {
+    margin-block-start: 3px;
   }
 
   .main {
@@ -336,6 +393,11 @@ form .button__text {
 
   .card__img {
     max-height: 100%;
+  }
+
+  .card__pic-text {
+    top: 25px;
+    right: 25px;
   }
 
   .save__button {

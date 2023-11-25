@@ -70,12 +70,12 @@
 
 
 .button {
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease;
 }
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 var(--color-button);
-  outline: none;
+  /* outline: none; */
 }
 
 .button:before {
@@ -92,6 +92,19 @@
 
 .button:hover:before {
   transform: scaleX(1);
+}
+
+form.button:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* width: 100%;
+  height: 100%; */
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+form.button:after:focus-visible {
+  box-shadow: 2px 2px 0 var(--color-accent);
 }
 
 .like-icon {

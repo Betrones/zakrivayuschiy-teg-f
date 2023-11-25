@@ -16,7 +16,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  
+
   font-family: var(--f-main), sans-serif;
 
   display: flex;
@@ -28,17 +28,26 @@
   color: var(--color-accent);
   font-weight: var(--fw-text);
 
-  background-image: repeating-linear-gradient(to right, var(--color-bg-gradient-line) 0px 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, var(--color-bg-gradient-line) 0px 2px, transparent 2px 4px), linear-gradient(var(--color-bg-gradient));
+  background-image: repeating-linear-gradient(
+      to right,
+      var(--color-bg-gradient-line) 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--color-bg-gradient-line) 0px 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(var(--color-bg-gradient));
   background-attachment: fixed;
   background-size: cover;
-  font-variation-settings: 'wght' var(--fw-text);
+  font-variation-settings: "wght" var(--fw-text);
 }
 
 a {
   cursor: pointer;
   max-width: 100%;
 }
-
 
 .header {
   max-width: calc(100% - 4px);
@@ -60,7 +69,7 @@ a {
   align-items: center;
   gap: 20px;
   grid-row-start: 2;
-  
+
   text-transform: uppercase;
 
   margin: 5px auto;
@@ -132,7 +141,7 @@ a {
 
 .card__title {
   padding: 5px 10px;
-  font-variation-settings: 'wght' var(--fw-title);
+  font-variation-settings: "wght" var(--fw-title);
 }
 
 .card__pic {
@@ -161,13 +170,13 @@ a {
   mix-blend-mode: hard-light;
 }
 
-@supports((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
+@supports ((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
   .card__pic-text {
-      -webkit-text-stroke: 1px var(--color-bg);
-      text-stroke: 1px var(--color-bg);
-      text-shadow: none;
+    -webkit-text-stroke: 1px var(--color-bg);
+    text-stroke: 1px var(--color-bg);
+    text-shadow: none;
   }
-} 
+}
 
 .card__content {
   padding: 25px;
@@ -235,8 +244,6 @@ a {
   outline-offset: 1px;
 }
 
-
-
 .save__button .button__text {
   line-height: 90%;
   font-size: 14px;
@@ -302,15 +309,15 @@ form.button {
 }
 
 .card__img_filter__invert_saturate-low_sepia {
-  filter: invert(1) saturate(0.25) sepia(1)
+  filter: invert(1) saturate(0.25) sepia(1);
 }
 
 .card__img_filter__saturate-high_brightness_sepia {
-  filter: saturate(4) brightness(0.8) sepia(0.8)
+  filter: saturate(4) brightness(0.8) sepia(0.8);
 }
 
 .card__img_filter_invert_saturate-low_brightness {
-  filter: invert(1) saturate(0.25) brightness(0.8)
+  filter: invert(1) saturate(0.25) brightness(0.8);
 }
 
 .card__img_filter_sepia_brightness {

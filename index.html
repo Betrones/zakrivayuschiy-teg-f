@@ -123,7 +123,11 @@
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
 
         <div class="card__pic">
-          <img src="./images/car.png" alt="Машина" class="card__img card__img_filter__saturate-low" />
+          <img
+            src="./images/car.png"
+            alt="Машина"
+            class="card__img card__img_filter__saturate-low"
+          />
           <span class="card__pic-text">&lt;/HTML&gt;</span>
         </div>
 
@@ -189,7 +193,11 @@
         <h2 class="card__title">1 спринт: А если не получится?</h2>
 
         <div class="card__pic">
-          <img src="./images/car.png" alt="Машина" class="card__img card__img_filter__invert_saturate-low_sepia " />
+          <img
+            src="./images/car.png"
+            alt="Машина"
+            class="card__img card__img_filter__invert_saturate-low_sepia"
+          />
           <span class="card__pic-text">&lt;CSS&gt;</span>
         </div>
 
@@ -253,7 +261,11 @@
         <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
 
         <div class="card__pic">
-          <img src="./images/car.png" alt="Машина" class="card__img card__img_filter__saturate-high_brightness_sepia" />
+          <img
+            src="./images/car.png"
+            alt="Машина"
+            class="card__img card__img_filter__saturate-high_brightness_sepia"
+          />
           <span class="card__pic-text">&lt;desigions&gt;</span>
         </div>
 
@@ -319,7 +331,11 @@
         <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
 
         <div class="card__pic">
-          <img src="./images/car.png" alt="Машина" class="card__img card__img_filter_invert_saturate-low_brightness" />
+          <img
+            src="./images/car.png"
+            alt="Машина"
+            class="card__img card__img_filter_invert_saturate-low_brightness"
+          />
           <span class="card__pic-text">care</span>
         </div>
 
@@ -386,7 +402,11 @@
         <h2 class="card__title">3 спринт: Обходные стратегии</h2>
 
         <div class="card__pic">
-          <img src="./images/car.png" alt="Машина" class="card__img card__img_filter_sepia_brightness" />
+          <img
+            src="./images/car.png"
+            alt="Машина"
+            class="card__img card__img_filter_sepia_brightness"
+          />
           <span class="card__pic-text">&lt;support&gt;</span>
         </div>
 
@@ -450,7 +470,11 @@
         <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
 
         <div class="card__pic">
-          <img src="./images/car.png" alt="Машина" class="card__img card__img_filter__blur" />
+          <img
+            src="./images/car.png"
+            alt="Машина"
+            class="card__img card__img_filter__blur"
+          />
           <span class="card__pic-text">&lt;lifes-style: none;&gt;</span>
         </div>
 
@@ -516,7 +540,11 @@
         <h2 class="card__title">«Сейчас я здесь»</h2>
 
         <div class="card__pic">
-          <img src="./images/car.png" alt="Машина" class="card__img card__img_filter_invert_sepia" />
+          <img
+            src="./images/car.png"
+            alt="Машина"
+            class="card__img card__img_filter_invert_sepia"
+          />
           <span class="card__pic-text">&lt;experience&gt;</span>
         </div>
 
@@ -593,21 +621,25 @@
       </button>
 
       <dialog id="dialog-id">
-          <div class="dialog__content">
-            <svg class="dialog__img" viewBox="0 0 39 39">
-              <use href="./images/floppy.svg#floppy"></use>
-            </svg>
-            <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-          </div>
+        <div class="dialog__content">
+          <svg class="dialog__img" viewBox="0 0 39 39">
+            <use href="./images/floppy.svg#floppy"></use>
+          </svg>
+          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+        </div>
 
-          <form method="dialog" class="button" onclick="window['dialog-id'].close()">
-            <input
-              class="dialog__button visually-hidden"
-              type="submit"
-              value="ok"
-            >
-              <span class="button__text">Ок</span>
-          </form>
+        <form
+          method="dialog"
+          class="button"
+          onclick="window['dialog-id'].close()"
+        >
+          <input
+            class="dialog__button visually-hidden"
+            type="submit"
+            value="ok"
+          />
+          <span class="button__text">Ок</span>
+        </form>
       </dialog>
     </main>
 

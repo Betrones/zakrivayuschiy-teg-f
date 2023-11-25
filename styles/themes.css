@@ -9,7 +9,7 @@
   --color-bg: #fff;
   --color-accent: #000;
 
-  --color-bg-gradient: #E7E7E7, #1A1A1A;
+  --color-bg-gradient: #e7e7e7, #1a1a1a;
   --color-bg-gradient-line: #d3d3d3;
 
   --fw-text: 400;
@@ -23,18 +23,18 @@
 
 :root.theme-dark {
   --color-bg: #000;
-  --color-accent: #00CC14;
+  --color-accent: #00cc14;
 
-  --color-bg-gradient: #007F0C, #004306;
+  --color-bg-gradient: #007f0c, #004306;
   --color-bg-gradient-line: #000;
 
   --fw-text: 465;
   --fw-title: 785;
 
-  --color-button: #00CC14;
+  --color-button: #00cc14;
   --color-button-alt: #000;
 
-  --color-heart: #00CC14;
+  --color-heart: #00cc14;
 }
 
 :root.theme-dark .button__text {
@@ -48,18 +48,18 @@
 @media (prefers-color-scheme: dark) {
   :root.theme-auto {
     --color-bg: #000;
-    --color-accent: #00CC14;
+    --color-accent: #00cc14;
 
-    --color-bg-gradient: #007F0C, #004306;
+    --color-bg-gradient: #007f0c, #004306;
     --color-bg-gradient-line: #000;
-  
+
     --fw-text: 465;
     --fw-title: 785;
 
-    --color-button: #00CC14;
+    --color-button: #00cc14;
     --color-button-alt: #000;
 
-    --color-heart: #00CC14;
+    --color-heart: #00cc14;
   }
 
   :root.theme-auto .button__text {
@@ -71,13 +71,13 @@
   :root.theme-auto {
     --color-bg: #fff;
     --color-accent: #000;
-  
-    --color-bg-gradient: #E7E7E7, #1A1A1A;
+
+    --color-bg-gradient: #e7e7e7, #1a1a1a;
     --color-bg-gradient-line: #d3d3d3;
-  
+
     --fw-text: 400;
     --fw-title: 700;
-  
+
     --color-button: #000;
     --color-button-alt: #fff;
   }

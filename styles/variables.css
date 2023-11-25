@@ -1,9 +1,8 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
-
 :root {
-  --f-accent: 'PressStart2P';
-  --f-main: 'Inter-Variable';
+  --f-accent: "PressStart2P";
+  --f-main: "Inter-Variable";
 
   --fw-text: 400;
   --fw-title: 700;
@@ -11,7 +10,7 @@
   --color-bg: #fff;
   --color-accent: #000;
 
-  --color-bg-gradient: #E7E7E7, #1A1A1A;
+  --color-bg-gradient: #e7e7e7, #1a1a1a;
 
   --color-button: #000;
   --color-button-alt: #fff;

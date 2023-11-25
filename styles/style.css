@@ -33,10 +33,6 @@ a {
   cursor: pointer;
 }
 
-.button {
-  cursor: pointer;
-}
-
 
 .header {
   background: var(--color-bg);
@@ -178,6 +174,7 @@ a {
   border: 2px solid var(--color-accent);
   font-family: var(--f-accent), fantasy;
   line-height: 90%;
+  cursor: pointer;
 }
 
 .card__like-button {

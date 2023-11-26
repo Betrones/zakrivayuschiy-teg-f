@@ -350,13 +350,14 @@ form .button {
     width: clamp(375px, calc(100vw * 0.483), 696px);
     margin-inline: auto;
     /* height: 366px; */
-    grid-template-rows: 136px auto 120px;
+    /* grid-template-rows: 136px auto 120px; */
     margin-block: 103px;
   }
 
   .header__title-group {
     align-self: end;
     margin: 0;
+    margin-block-start: 16px;
   }
 
   .header__theme-menu {

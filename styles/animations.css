@@ -92,14 +92,6 @@
   transform: scaleX(1);
 }
 
-form {
-  transition: box-shadow 0.5s ease-in-out;
-}
-
-form:focus {
-  box-shadow: 2px 2px 0 var(--color-accent);
-}
-
 .like-icon {
   transition: outline 0.3s ease;
 }

@@ -56,3 +56,8 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+
+dialog:-internal-dialog-in-top-layer {
+  max-width: 100%;
+}

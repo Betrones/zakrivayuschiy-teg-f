@@ -45,6 +45,10 @@
   color: var(--color-bg);
 }
 
+:root.theme-dark .dialog__btn {
+  color: var(--color-button);
+}
+
 @media (prefers-color-scheme: dark) {
   :root.theme-auto {
     --color-bg: #000;
@@ -63,6 +67,10 @@
   }
 
   :root.theme-auto .button__text {
+    color: var(--color-button);
+  }
+
+  :root.theme-auto .dialog__btn {
     color: var(--color-button);
   }
 }

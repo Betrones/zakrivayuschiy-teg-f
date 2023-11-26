@@ -210,7 +210,6 @@ a {
   padding: 9px 17px;
 
   position: relative;
-  
 }
 
 /* .button:focus {
@@ -266,8 +265,6 @@ a {
   padding: 32px 42px;
   width: clamp(341px, calc(100vw * 0.909), 357px);
   background: var(--color-bg);
-
-  
 }
 
 .dialog[open] {
@@ -362,8 +359,6 @@ form .button {
     margin: 0;
   }
 
-  .header__logo {}
-
   .header__theme-menu {
     margin-block-start: 3px;
   }
@@ -395,7 +390,6 @@ form .button {
     padding: 32px;
   }
 }
-
 
 @media (width>550px) {
   .header__logo {

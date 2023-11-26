@@ -57,7 +57,6 @@ ol {
   white-space: nowrap;
 }
 
-
 dialog:-internal-dialog-in-top-layer {
   max-width: 100%;
 }

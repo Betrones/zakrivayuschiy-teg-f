@@ -15,8 +15,8 @@
   --fw-text: 400;
   --fw-title: 700;
 
-  --color-button: #000;
-  --color-button-alt: #fff;
+  --color-button: #fff;
+  --color-button-alt: #000;
 
   --color-heart: #000;
 }
@@ -32,21 +32,9 @@
   --fw-title: 785;
 
   --color-button: #00cc14;
-  --color-button-alt: #000;
+  --color-button-alt: #00cc14;
 
   --color-heart: #00cc14;
-}
-
-:root.theme-dark .button__text {
-  color: var(--color-button);
-}
-
-:root.theme-light .save__img {
-  color: var(--color-bg);
-}
-
-:root.theme-dark .dialog__btn {
-  color: var(--color-button);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,17 +49,9 @@
     --fw-title: 785;
 
     --color-button: #00cc14;
-    --color-button-alt: #000;
+    --color-button-alt: #00cc14;
 
     --color-heart: #00cc14;
-  }
-
-  :root .button__text {
-    color: var(--color-button);
-  }
-
-  :root .dialog__btn {
-    color: var(--color-button);
   }
 }
 
@@ -86,11 +66,9 @@
     --fw-text: 400;
     --fw-title: 700;
 
-    --color-button: #000;
-    --color-button-alt: #fff;
-  }
+    --color-button: #fff;
+    --color-button-alt: #000;
 
-  :root .save__img {
-    color: var(--color-bg);
+    --color-heart: #000;
   }
 }

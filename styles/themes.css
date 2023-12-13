@@ -50,7 +50,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root.theme-auto {
+  :root {
     --color-bg: #000;
     --color-accent: #00cc14;
 
@@ -66,17 +66,17 @@
     --color-heart: #00cc14;
   }
 
-  :root.theme-auto .button__text {
+  :root .button__text {
     color: var(--color-button);
   }
 
-  :root.theme-auto .dialog__btn {
+  :root .dialog__btn {
     color: var(--color-button);
   }
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme-auto {
+  :root {
     --color-bg: #fff;
     --color-accent: #000;
 
@@ -90,7 +90,7 @@
     --color-button-alt: #fff;
   }
 
-  :root.theme-auto .save__img {
+  :root .save__img {
     color: var(--color-bg);
   }
 }

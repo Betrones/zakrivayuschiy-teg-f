@@ -78,9 +78,10 @@ a {
 .header__logo {
   /* font-size: 3.0625rem; */
   /* font-size: 49px; */
-  /* font-size: clamp(49px, calc(2.710387323943662rem + 1.5023474178403755vw), 65px); */
+  font-size: clamp(49px, calc(2.710387323943662rem + 1.5023474178403755vw), 65px);
+  font-size: clamp(49px, calc(100vw * 0.131), 65px);
   /* font-size: clamp(3.063rem, 2.374rem + 2.936vw, 4.063rem); */
-  font-size: clamp(2.8125rem, 1.9524rem + 3.6697vw, 4.0625rem);
+  /* font-size: clamp(2.8125rem, 1.9524rem + 3.6697vw, 4.0625rem); */
   max-width: 100%;
   /* text-transform: uppercase; */
 
